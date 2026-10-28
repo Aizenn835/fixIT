@@ -1,0 +1,149 @@
+*{
+    font-family: 'DM Sans' , 'Plus Jakarta Sans';
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+.header-container{
+    display:flex;
+    width: 100%;
+    background-color: #0F2F6E;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:12px;
+    padding:10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.logo-container{
+    display:flex;
+    align-items: center;
+    gap:12px;
+}
+.logo-img-container{
+    background-color: rgb(95, 123, 172);
+    border-radius: 20%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding:2px;
+}
+.lcup-logo{
+    width: 40px;
+    height: 40px;
+}
+.lcup-text{
+    font-size:1rem;
+    color:#fff;
+}
+.header-supporting-text{
+    font-size:0.75rem;
+    color:rgb(184, 179, 179);
+}
+
+/* list container */
+.list-container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+}
+.list-container li{
+    list-style: none;
+    color:#fff;
+    cursor: pointer;
+    letter-spacing: 0.3px;
+}
+.list-container li:hover{
+    text-decoration: underline;
+}
+.right-header-container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+}
+
+.add-report {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    padding: 11px 18px;
+    background-color: #FFFFFF;
+    color: #153570;
+
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+
+    border: 1px solid transparent;
+    border-radius: 999px;
+    cursor: pointer;
+
+    transition:
+        background-color 180ms ease,
+        color 180ms ease,
+        box-shadow 180ms ease,
+        transform 180ms ease;
+}
+
+.add-report:hover {
+    background-color: #EAF0FC;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 12%);
+}
+
+.add-report:active {
+    transform: scale(0.97);
+}
+
+.add-report:focus-visible {
+    outline: 3px solid #93B4FF;
+    outline-offset: 3px;
+}
+
+/* profile design */
+.pfp-container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:12px;
+}
+.pfp-image{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.pfp-container-text{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.pfp-container-text p{
+    font-size:1rem;
+    color:#fff;
+}
+.pfp-container-text span{
+    text-align: start;
+    font-size:0.75rem;
+    color:rgb(184, 179, 179);
+}
+.notif{
+    color:#fff;
+    font-size:1.25rem;
+    font-weight: 440;
+    cursor: pointer;
+    position: relative;
+}
+.notif-count{
+    position: absolute;
+    right: -10%;
+    top:-10%;
+    font-size:0.55rem;
+    background-color: red;
+    padding:2px;
+    border-radius: 30%;
+}
