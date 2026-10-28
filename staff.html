@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700&family=Material+Symbols+Outlined&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>FixIt - Staff Work Orders</title>
+  </head>
+  <body>
+    <div class="shell">
+      <aside class="side" id="side"></aside>
+
+      <div class="main">
+        <div class="grid4" id="kpis"></div>
+
+        <div class="split">
+          <div class="card">
+            <div class="row">
+              <h2>Work Order Queue</h2>
+            </div>
+            <div class="tabs" id="tabs" style="margin:12px 0"></div>
+            <div id="queue"></div>
+          </div>
+
+          <div id="detail" class="stack"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="staff.js"></script>
+  </body>
+</html>
