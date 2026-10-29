@@ -4,6 +4,10 @@
     padding:0;
     margin:0;
 }
+body{
+    overflow: hidden;
+}
+
 .header-container{
     display:flex;
     width: 100%;
@@ -14,6 +18,8 @@
     gap:12px;
     padding:10px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position:relative;
+    z-index:2000;
 }
 .logo-container{
     display:flex;
@@ -69,20 +75,16 @@
     align-items: center;
     justify-content: center;
     gap: 8px;
-
     padding: 11px 18px;
     background-color: #FFFFFF;
     color: #153570;
-
     font-family: inherit;
     font-size: 14px;
     font-weight: 600;
     white-space: nowrap;
-
     border: 1px solid transparent;
     border-radius: 999px;
     cursor: pointer;
-
     transition:
         background-color 180ms ease,
         color 180ms ease,
@@ -138,6 +140,13 @@
     cursor: pointer;
     position: relative;
 }
+.settings{
+    color:#fff;
+    font-size:1.25rem;
+    font-weight: 440;
+    cursor: pointer;
+    position: relative;
+}
 .notif-count{
     position: absolute;
     right: -10%;
@@ -146,4 +155,95 @@
     background-color: red;
     padding:2px;
     border-radius: 30%;
+}
+
+/* settings pop-up */
+.settings-pop-up-container{
+    display:flex;
+    align-items: center;
+    position: absolute;
+    right:6%;
+    top:7%;
+    z-index:5000;
+    transform: translateX(200%);
+    opacity: 0;
+    transition: transform 0.3s ease , opacity 0.4s ease;
+    pointer-events: none;
+}
+.settings-on{
+    transform: translateX(0%);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.settings-nav-list{
+    list-style: none;
+    display:flex;
+    flex-direction: column;
+    gap:12px;
+    padding:10px 12px;
+    border-radius: 12px;
+    border:1px solid rgb(216, 210, 210);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+.settings-nav-list li{
+    cursor: pointer;
+    padding:5px;
+    border-radius: 5px;
+}
+.settings-nav-list li:hover{
+    background-color: #e2e9f0;
+}
+
+/* side-overlay */
+.side-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 2999;
+}
+.add-overlay{
+    pointer-events: auto;
+    opacity: 1;
+}
+.modal-report {
+    display: flex;
+    flex-direction: column; /* 👈 Stacks children vertically instead of horizontally */
+    width: 80%;
+    max-width: 1000px;
+    height: 80%;
+    margin: 100px auto;
+    background-color: rgb(247, 245, 245);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 10px 12px;
+
+}
+.header-report-modal{
+    font-size:1rem;
+}
+.modal-report-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+}
+.exit-report-modal{
+    padding:5px;
+    text-align: center;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.exit-report-modal:hover{
+    background-color: rgb(231, 234, 238);
 }
