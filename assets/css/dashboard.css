@@ -230,20 +230,118 @@ body{
 }
 .header-report-modal{
     font-size:1rem;
+    font-weight: 600;
+    color: rgb(41, 38, 38);
 }
 .modal-report-header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-
+    margin-bottom: 30px;
 }
 .exit-report-modal{
     padding:5px;
     text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(230, 227, 227);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.sub-header{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sub-header p{
+    font-size:0.82rem;
+    color:gray;
+    align-items: flex-end;
+    font-weight: 500;
+}
+.add-new-modal{
+    border:1px solid rgb(190, 187, 187);
+    padding:10px 12px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 12px;
+    font-weight: 500;
     cursor: pointer;
 }
-.exit-report-modal:hover{
-    background-color: rgb(231, 234, 238);
+.list-updatable-container{
+    margin-top:12px;
+    border:1px solid rgb(218, 214, 214);
+    padding:10px 12px;
+    border-radius: 12px;
+}
+.list-inner-updatable-container{
+    display: flex;
+    align-self: center;
+    gap:12px;
+}
+.parent-left-right-container{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.report-img{
+    display:block;
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.report-text{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:5px;
+}
+.report-text p{
+    font-weight: 550;
+    font-size:0.925rem;
+}
+.report-text-inner-container{
+    display:flex;
+    gap:5px;
+    align-items: center;
+}
+.room{
+    color:rgb(161, 158, 158);
+    font-weight:500;
+    font-size:0.82rem;
+}
+.status-report {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 5px 12px;
+    border-radius: 20px;
+    background-color: #fff7e6;
+    color: #b96b00;
+    border: 1px solid #f5d9a6;
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 1.4;
+    white-space: nowrap;
+}
+.right-report-container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:12px;
+}
+.btn-report-modal{
+    padding:5px 7px;
+    outline: none;
+    border:1px solid #dbd5d5;
+    border-radius: 12px;
+    font-size:1rem;
+    cursor: pointer;
 }
