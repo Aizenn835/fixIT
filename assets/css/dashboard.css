@@ -422,13 +422,6 @@ body{
     font-weight: 450;
     font-size:0.80rem;
 }
-.overview-right-ticket{
-    width: 55%;
-    margin:20px;
-    border:1px solid rgb(224, 221, 221);
-    border-radius: 12px;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
-}
 
 /* category */
 .grid-submit-report-container{
@@ -574,8 +567,23 @@ body{
     color:rgb(230, 35, 35);
 }
 .high-priority{
-    color:#b96b00
+    color:#b96b00;
 }
 .low-priority{
     color:#2e7d32;
+}
+.overview-right-ticket{
+    width: 55%;
+    margin:20px;
+    padding:12px;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    gap:12px;
+    border-radius: 12px;
+}
+.overview-inner-right-ticket{
+    border:1px solid rgb(224, 221, 221);
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
 }
